@@ -44,3 +44,42 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/* Swiper Navigation Styles */
+.testimonial-prev,
+.testimonial-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+.testimonial-prev:disabled,
+.testimonial-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.testimonials-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials-wrap .swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
