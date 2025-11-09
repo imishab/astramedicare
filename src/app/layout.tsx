@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "@/components/common/SmoothScroll";
+import Preloader from "@/components/common/Preloader";
 
 export const metadata: Metadata = {
   title: "Astra Medicare - Calicut",
@@ -45,6 +46,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/responsive.css" />
       </head>
       <body>
+        <Preloader />
         <SmoothScroll />
         {children}
 

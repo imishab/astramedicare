@@ -1,99 +1,119 @@
+"use client";
+import { useState, useEffect } from 'react';
+// import Button from './Button';
+import { AudioLines, ChartNoAxesGantt, X } from 'lucide-react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
-export default function Navbar() {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <>
-    {/* START MENU DESIGN AREA */}
-    <header className="main-header">
-      <div className="header-upper">
-        <div className="container">
-          <div className="header-inner d-flex align-items-center">
-            {/* START LOGO DESIGN AREA */}
-            <div className="logo-outer">
-              <div className="logo">
-                <a href="index.html">
-                  <img
-                    src="/img/logo.png"
-                    width="100px"
-                    alt="Logo"
-                    title="Logo"
-                  />
-                </a>
-              </div>
+    <nav
+      className="fixed top-0 left-0 py-10 right-0 z-10 bg-[#f5f2ec]"
+
+    >
+      <div className="container mx-auto px-10 py-7">
+        <div className="relative flex items-center justify-between md:hidden">
+          {/* Logo for Mobile */}
+          <div>
+            <Link href="/" className="text-6xl font-medium text-black">
+            <img src="/img/logo2.png" alt="Logo" className="w-20 " />            </Link>
+          </div>
+          {/* Hamburger for Mobile */}
+          <div>
+            <button onClick={() => setIsOpen(!isOpen)} className="outline-none">
+              {isOpen ? <X className="w-6 h-6 text-black" /> : <ChartNoAxesGantt className="w-6 h-6 text-black" />}
+            </button>
+          </div>
+        </div>
+
+        <div className="hidden md:flex items-center">
+          {/* Left: Logo */}
+          <div className="w-1/3">
+            <Link href="/" className="text-6xl font-medium text-black font-[SignPainter]">
+              <img src="/img/logo2.png" alt="Logo" className="w-40 " />
+            </Link>
+          </div>
+
+          {/* Middle: Nav Links */}
+          <div className="w-1/3 text-center ">
+            <div
+              className="flex items-center justify-center gap-8 px-4 py-2"
+            >
+              <Link
+                href="/"
+                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+
+              >
+                Home
+              </Link>
+              <Link
+                href="/About"
+                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+
+              >
+                About Me
+              </Link>
+              <Link
+                href="/Works"
+                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+
+              >
+                My Works
+              </Link>
+              <Link
+                href="/Connect"
+                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+
+              >
+                Connect Me
+              </Link>
             </div>
-            {/* / END LOGO DESIGN AREA */}
-            {/* START NAV DESIGN AREA */}
-            <div className="nav-outer clearfix mx-auto">
-              {/* Main Menu */}
-              <nav className="main-menu navbar-expand-lg">
-                <div className="navbar-header">
-                  <div className="mobile-logo">
-                    <a href="index.html">
-                      <img
-                        src="/img/logo.png"
-                        alt="Logo"
-                        width="100px"
-                        title="Logo"
-                      />
-                    </a>
-                  </div>
-                  {/* Toggle Button */}
-                  <button
-                    type="button"
-                    className="navbar-toggle"
-                    data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse"
-                  >
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                  </button>
-                </div>
-                <div className="navbar-collapse collapse">
-                  <ul className="navigation ">
-                    <li>
-                      <a className="nav-link-click text-black" href="#about">
-                        Home
-                      </a>
-                    </li>
-                    <li>
-                      <a className="nav-link-click" href="#about">
-                        About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a className="nav-link-click" href="#service">
-                        Our Services
-                      </a>
-                    </li>
-                    <li>
-                      <a className="nav-link-click" href="#works">
-                        Blogs
-                      </a>
-                    </li>
-                    <li>
-                      <a className="nav-link-click" href="#pricing">
-                        Contact us
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-              {/* / END NAV DESIGN AREA */}
-            </div>
-            <div className="menu-btns">
-              <a className="nav-link-click me-4" href="#works">
-                <i className="ri-phone-line" /> +91 999-999-999
-              </a>
-              <a href="#contact" className="theme-btn">
-                Book a Visit
-              </a>
-            </div>
+          </div>
+
+          {/* Right: Button */}
+          <div className="w-1/3 flex justify-end" >
+            {/* <a className="nav-link-click me-4" href="#works"><i className="ri-phone-line"></i> +91 999-999-999</a> */}
+            <a href="#contact" className="theme-btn">Book a Visit</a>
           </div>
         </div>
       </div>
-    </header>
-    {/* / END MENU DESIGN AREA */}
-  </>
-  
-  )
-}
+
+      {/* Mobile menu */}
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-transparent`}>
+        <div className="px-5 pt-0 pb-3 space-y-1 sm:px-3">
+          <Link href="/" className={`block text-black px-3 py-2 rounded-md ${pathname === '/' ? 'border border-white/20' : ''}`}>Home</Link>
+          <Link href="/About" className={`block text-black px-3 py-2 rounded-md ${pathname === '/About' ? 'border border-white/20' : ''}`}>About Me</Link>
+          <Link href="/Works" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Works' ? 'border border-white/20' : ''}`}>My Works</Link>
+          <Link href="/Connect" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Connect' ? 'border border-white/20' : ''}`}>Connect Me</Link>
+        </div>
+        <div className="px-2 pt-2 pb-3">
+          <Link href="/Connect">
+            {/* <Button className="w-full">Lets Talk</Button> */}
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

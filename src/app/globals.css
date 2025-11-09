@@ -83,3 +83,45 @@ html.lenis {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
+/* Navbar Toggle Styles */
+.navbar-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggle.active .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggle.active .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.header-inner{
+  padding: 15px 0px !important;
+}
+
+/* Custom thin font for nav links */
+.font-thin {
+  font-weight: 400 !important;
+}
+
+.nav-link-click {
+  font-weight: 300;
+}

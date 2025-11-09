@@ -4,7 +4,10 @@ export default function Banner() {
   return (
     <>
     {/* START ABOUT DESIGN AREA */}
-    <section id="about" className="about-area">
+    <section
+      id="about"
+      className="py-120 md:py-120 lg:py-[180px]"
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-7">
@@ -20,7 +23,7 @@ export default function Banner() {
                   display: "flex",
                   alignItems: "center",
                   gap: 20,
-                  fontFamily: "Arial, sans-serif"
+                  fontFamily: "Arial, sans-serif",
                 }}
                 className=""
               >
@@ -41,7 +44,7 @@ export default function Banner() {
                       color: "#1f2937",
                       fontWeight: "bold",
                       textDecoration: "none",
-                      fontSize: "0.9rem"
+                      fontSize: "0.9rem",
                     }}
                   >
                     Click Here →
