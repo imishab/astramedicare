@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "@/components/common/SmoothScroll";
 import Preloader from "@/components/common/Preloader";
+import AppointmentModal from "@/components/common/AppointmentModal";
 
 export const metadata: Metadata = {
   title: "Astra Medicare - Calicut",
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Preloader />
         <SmoothScroll />
         {children}
+        <AppointmentModal />
 
         <div className="progress-wrap cursor-pointer">
           <i className="ri-arrow-up-double-line" />
