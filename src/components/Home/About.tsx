@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
     <div className="container">
       <div className="row justify-content-center text-center">
         <div className="col-12">

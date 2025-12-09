@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, MouseEvent } from 'react';
 // import Button from './Button';
 import { AudioLines, ChartNoAxesGantt, X } from 'lucide-react';
 import Link from 'next/link';
@@ -26,17 +26,32 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleSmoothScroll = (event: MouseEvent<HTMLAnchorElement>, target: string) => {
+    // Only intercept hash links that exist on the current page
+    if (!target.startsWith('#')) return;
+    event.preventDefault();
+    const element = document.querySelector(target);
+    if (element) {
+      const offsetTop = (element as HTMLElement).offsetTop;
+      // Adjust for fixed nav height (approx 80px on desktop)
+      window.scrollTo({
+        top: Math.max(offsetTop - 20, 0),
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <nav
-      className="fixed top-0 left-0 py-10 right-0 z-10 bg-[#f5f2ec]"
+      className="fixed top-0 left-0 py-2 md:py-4 right-0 z-10 bg-[#f5f2ec]"
 
     >
-      <div className="container mx-auto px-10 py-7">
+      <div className="container mx-auto px-4 md:px-6 lg:px-10 py-2 md:py-4 lg:py-7">
         <div className="relative flex items-center justify-between md:hidden">
           {/* Logo for Mobile */}
           <div>
             <Link href="/" className="text-6xl font-medium text-black">
-            <img src="/img/logo2.png" alt="Logo" className="w-20 " />            </Link>
+            <img src="/img/logo2.png" alt="Logo" className="w-16 md:w-20" />            </Link>
           </div>
           {/* Hamburger for Mobile */}
           <div>
@@ -55,37 +70,51 @@ const Navbar = () => {
           </div>
 
           {/* Middle: Nav Links */}
-          <div className="w-1/3 text-center ">
+          <div className="w-full text-center ">
             <div
               className="flex items-center justify-center gap-8 px-4 py-2"
             >
               <Link
-                href="/"
+                href="/#home"
                 className="text-black rounded-md text-sm font-thin hover:text-black/80"
-
+                onClick={(e) => handleSmoothScroll(e, '#home')}
               >
                 Home
               </Link>
               <Link
-                href="/About"
+                href="#about"
                 className="text-black rounded-md text-sm font-thin hover:text-black/80"
-
+                onClick={(e) => handleSmoothScroll(e, '#about')}
               >
-                About Me
+                About
               </Link>
               <Link
-                href="/Works"
+                href="#service"
                 className="text-black rounded-md text-sm font-thin hover:text-black/80"
-
+                onClick={(e) => handleSmoothScroll(e, '#service')}
               >
-                My Works
+                Our Services
               </Link>
               <Link
-                href="/Connect"
+                href="#reviews"
                 className="text-black rounded-md text-sm font-thin hover:text-black/80"
-
+                onClick={(e) => handleSmoothScroll(e, '#reviews')}
               >
-                Connect Me
+                Reviews
+              </Link>
+              <Link
+                href="#blogs"
+                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+                onClick={(e) => handleSmoothScroll(e, '#blogs')}
+              >
+                Blogs
+              </Link>
+              <Link
+                href="#contact"
+                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+                onClick={(e) => handleSmoothScroll(e, '#contact')}
+              >
+                Contact Us
               </Link>
             </div>
           </div>

@@ -1238,6 +1238,13 @@ html {
     margin-top: 60px;
 }
 
+@media (max-width: 767px) {
+    .about-content-part,
+    .about-content-part-bottom {
+        padding: 30px !important;
+    }
+}
+
 .about-content-part-bottom {
     margin-top: 30px;
 }
