@@ -9,7 +9,7 @@ export default function Footer() {
     >
       <div className="row " style={{ paddingTop: 100, paddingBottom: 40 }}>
         <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <img src="/img/logo.png" width="90%" alt="" /> <br /> <br />
+          <img src="/img/logo2.png" width="50%" alt="" /> <br /> <br />
           <p>
             We provide personalized dental care to ensure your smile stays healthy
             and confident every day.
