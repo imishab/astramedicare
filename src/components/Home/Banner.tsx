@@ -6,10 +6,8 @@ export default function Banner() {
     {/* START ABOUT DESIGN AREA */}
     <section
       id="home"
-      className="py-120"
-      style={{ marginTop: 0 }}
     >
-      <div className="container mx-auto px-4 sm:px-6 md:px-6">
+      <div className="container px-10 py-120 sm:px-4 sm:py-180">
         <div className="row">
           <div className="col-lg-7">
             <div className="about-content-part wow fadeInUp delay-0-2s">
