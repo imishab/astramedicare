@@ -30,16 +30,16 @@ export default function About() {
       </div>
     </div>
     {/* Floating profile circles */}
-    <div className="profile-circle floating-profile profile-1">
+    <div className="profile-circle floating-profile profile-1 md:block hidden">
       <img src="/img/user1.png" alt="Profile 1" />
     </div>
-    <div className="profile-circle floating-profile profile-2">
+    <div className="profile-circle floating-profile profile-2 md:block hidden">
       <img src="/img/user2.png" alt="Profile 2" />
     </div>
-    <div className="profile-circle floating-profile profile-3">
+    <div className="profile-circle floating-profile profile-3 md:block hidden">
       <img src="/img/user3.png" alt="Profile 3" />
     </div>
-    <div className="profile-circle floating-profile profile-4">
+    <div className="profile-circle floating-profile profile-4 md:block hidden">
       <img src="/img/user1.png" alt="Profile 4" />
     </div>
   </section>

@@ -14,7 +14,12 @@ export default function Appointment() {
           {/* START CONTACT FORM DESIGN AREA */}
           <div className="col-lg-6">
             <div className="contact-form contact-form-area wow fadeInUp delay-0-4s">
-              <h1 style={{ fontSize: 50 }} className="mb-4">
+              <h3 className="mb-4 md:hidden">
+                {" "}
+                Get Appointment <br />
+                From Our Experts
+              </h3>
+              <h1 className="mb-4 hidden md:block">
                 {" "}
                 Get Appointment <br />
                 From Our Experts

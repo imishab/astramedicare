@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="bg-white">
     <div
@@ -132,7 +134,7 @@ export default function Footer() {
           <div className="col-lg-6">
             <div className="copyright-text">
               <p>
-                Copyright @2024, <a href="index.html">Astra Medicare</a> All
+                Copyright @{currentYear}, <a href="index.html">Astra Medicare</a> All
                 Rights Reserved.
               </p>
             </div>

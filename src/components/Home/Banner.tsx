@@ -7,7 +7,7 @@ export default function Banner() {
     <section
       id="home"
     >
-      <div className="container px-10 py-120 sm:px-4 sm:py-180">
+      <div className="container px-4 py-120 md:px-10 md:py-[100px]">
         <div className="row">
           <div className="col-lg-7">
             <div className="about-content-part wow fadeInUp delay-0-2s">

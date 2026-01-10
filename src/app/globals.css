@@ -199,4 +199,17 @@ html.lenis {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  
+  /* Banner section mobile padding */
+  section#home .container {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  /* Section1 mobile padding reduction */
+  section#resume .single-resume {
+    padding: 50px 20px !important;
+  }
 }

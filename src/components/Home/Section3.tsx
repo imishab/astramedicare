@@ -16,8 +16,8 @@ export default function Section3() {
           </div>
         </div>
         {/* Text Section */}
-        <div className="col-lg-6 mt-4 mt-lg-0" style={{ padding: 50 }}>
-          <h2 className=" mb-3" style={{ fontSize: 35 }}>
+        <div className="col-lg-6 mt-4 mt-lg-0 p-[50px]">
+          <h2 className=" mb-3 " style={{ fontSize: 35 }}>
             Everything you need <br /> for a healthy Face
           </h2>
           <p className="mb-2">We’re putting your comfort first</p> <br />

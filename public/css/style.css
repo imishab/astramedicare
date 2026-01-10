@@ -3125,6 +3125,17 @@ ul.blog_pagination li a:hover {
     overflow: hidden;
     margin-top: 100px;
 }
+@media (max-width: 768px) {
+    .about-section {
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+  
+}
+
+
 
 .profile-circle {
     width: 80px;

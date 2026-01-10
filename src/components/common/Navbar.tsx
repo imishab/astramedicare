@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, MouseEvent } from 'react';
 // import Button from './Button';
-import { AudioLines, ChartNoAxesGantt, X } from 'lucide-react';
+import { AudioLines, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -56,7 +56,7 @@ const Navbar = () => {
           {/* Hamburger for Mobile */}
           <div>
             <button onClick={() => setIsOpen(!isOpen)} className="outline-none">
-              {isOpen ? <X className="w-6 h-6 text-black" /> : <ChartNoAxesGantt className="w-6 h-6 text-black" />}
+              {isOpen ? <X className="w-6 h-6 pt-5 text-black" /> : <Menu className="w-6 h-6 pt-5 text-black" />}
             </button>
           </div>
         </div>
@@ -129,14 +129,16 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-transparent`}>
-        <div className="px-5 pt-0 pb-3 space-y-1 sm:px-3">
-          <Link href="/" className={`block text-black px-3 py-2 rounded-md ${pathname === '/' ? 'border border-white/20' : ''}`}>Home</Link>
-          <Link href="/About" className={`block text-black px-3 py-2 rounded-md ${pathname === '/About' ? 'border border-white/20' : ''}`}>About Me</Link>
-          <Link href="/Works" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Works' ? 'border border-white/20' : ''}`}>My Works</Link>
-          <Link href="/Connect" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Connect' ? 'border border-white/20' : ''}`}>Connect Me</Link>
+        <div className="px-4 pt-20 pb-3 space-y-1 sm:px-3">
+          <Link href="/#home" className={`block text-black px-3 py-2 rounded-md ${pathname === '/' ? 'border border-white/20' : ''}`}>Home</Link>
+          <Link href="/About" className={`block text-black px-3 py-2 rounded-md ${pathname === '/About' ? 'border border-white/20' : ''}`}>About</Link>
+          <Link href="/Service" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Service' ? 'border border-white/20' : ''}`}>Our Services</Link>
+          <Link href="/Reviews" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Reviews' ? 'border border-white/20' : ''}`}>Reviews</Link>
+          <Link href="/Blogs" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Blogs' ? 'border border-white/20' : ''}`}>Blogs</Link>
+          <Link href="/Contact" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Contact' ? 'border border-white/20' : ''}`}>Contact Us</Link>
         </div>
         <div className="px-2 pt-2 pb-3">
-          <Link href="/Connect">
+          <Link href="/#contact">
             {/* <Button className="w-full">Lets Talk</Button> */}
           </Link>
         </div>
