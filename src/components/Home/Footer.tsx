@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="row " style={{ paddingTop: 100, paddingBottom: 40 }}>
         <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
           <img src="/img/logo2.png" width="50%" alt="" /> <br /> <br />
-          <p>
+          <p className="font-light">
             We provide personalized dental care to ensure your smile stays healthy
             and confident every day.
           </p>
@@ -21,27 +21,27 @@ export default function Footer() {
           <h6 className="text-uppercase font-weight-bold mb-4">Quick Links</h6>
           <ul className="list-unstyled mb-0">
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 Home
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 About Us
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 Services
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 Testimonials
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 Contact Us
               </a>
             </li>
@@ -51,27 +51,27 @@ export default function Footer() {
           <h6 className="text-uppercase font-weight-bold mb-4">Services</h6>
           <ul className="list-unstyled mb-0">
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 Facial
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 Cosmatology
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 Hair Treatment
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 Dental
               </a>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted">
+              <a href="#" className="text-muted font-light">
                 PRP
               </a>
             </li>
@@ -133,7 +133,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-lg-6">
             <div className="copyright-text">
-              <p>
+              <p className="font-light">
                 Copyright @{currentYear}, <a href="index.html">Astra Medicare</a> All
                 Rights Reserved.
               </p>
@@ -141,7 +141,7 @@ export default function Footer() {
           </div>
           <div className="col-lg-6">
             <div className="copyright-text extra-copyright">
-              <p>
+              <p className="font-light">
                 Crafted with ❤️{" "}
                 <a href="https://www.vectorcrop.com"> VectorCrop.</a>
               </p>

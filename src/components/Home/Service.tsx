@@ -53,7 +53,7 @@ export default function Service() {
             
               <div className="section-title section-title-2  wow fadeInUp delay-0-2s">
                 <h2 className="text-white">Our Services</h2>
-                <p>
+                <p className="font-light">
                   We provide personalized dental care to ensure your <br />
                   smile stays healthy and confident every day.
                 </p>
@@ -105,7 +105,7 @@ export default function Service() {
                             </React.Fragment>
                           ))}
                         </h1>
-                        <div className="text" style={{ fontSize: 12, lineHeight: '1.4rem' }}>
+                        <div className="text font-light" style={{ fontSize: 15, lineHeight: '1.4rem' }}>
                           {service.description}
                         </div>
                         <div className="testi-des">

@@ -12,7 +12,7 @@ export default function Testimonials() {
         <div className="col-xl-12 col-lg-12">
           <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
             <h2>Top Reviews</h2>
-            <p>More than 250 five-star reviews on Google</p>
+            <p className="font-light">More than 250 five-star reviews on Google</p>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function Testimonials() {
                   <i className="ri-star-s-fill h4" />
                   <br />
                   <br />
-                  <p>
+                  <p className="font-light">
                     The staff are friendly and professional, and the clinic is
                     clean and modern. I highly recommend them to anyone looking
                     for a great dental experience.
@@ -55,7 +55,7 @@ export default function Testimonials() {
                   <i className="ri-star-s-fill h4" />
                   <br />
                   <br />
-                  <p>
+                  <p className="font-light">
                     The staff are friendly and professional, and the clinic is
                     clean and modern. I highly recommend them to anyone looking
                     for a great dental experience.
@@ -80,7 +80,7 @@ export default function Testimonials() {
                   <i className="ri-star-s-fill h4" />
                   <br />
                   <br />
-                  <p>
+                  <p className="font-light">
                     The staff are friendly and professional, and the clinic is
                     clean and modern. I highly recommend them to anyone looking
                     for a great dental experience.
@@ -105,7 +105,7 @@ export default function Testimonials() {
                   <i className="ri-star-s-fill h4" />
                   <br />
                   <br />
-                  <p>
+                  <p className="font-light">
                     The staff are friendly and professional, and the clinic is
                     clean and modern. I highly recommend them to anyone looking
                     for a great dental experience.
@@ -130,7 +130,7 @@ export default function Testimonials() {
                   <i className="ri-star-s-fill h4" />
                   <br />
                   <br />
-                  <p>
+                  <p className="font-light">
                     The staff are friendly and professional, and the clinic is
                     clean and modern. I highly recommend them to anyone looking
                     for a great dental experience.
@@ -155,7 +155,7 @@ export default function Testimonials() {
                   <i className="ri-star-s-fill h4" />
                   <br />
                   <br />
-                  <p>
+                  <p className="font-light">
                     The staff are friendly and professional, and the clinic is
                     clean and modern. I highly recommend them to anyone looking
                     for a great dental experience.

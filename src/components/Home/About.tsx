@@ -8,7 +8,7 @@ export default function About() {
         <div className="col-12">
           <div className="about-tag-container">
             <div className="about-line" />
-            <span className="about-tag">About Us</span>
+            <span className="about-tag font-light">About Us</span>
             <div className="about-line" />
           </div>
           <h1 className="main-heading">
@@ -16,7 +16,7 @@ export default function About() {
             <br />
             without the hassle
           </h1>
-          <p className="description">
+          <p className="description font-light">
             Our clinic provides the best level of care — from checkups and
             cleanings to fillings, teeth-whitening procedures, porcelain veneers,
             crowns, bridges, dentures, dental implants, emergency care, and more;

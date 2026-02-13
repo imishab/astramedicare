@@ -76,42 +76,42 @@ const Navbar = () => {
             >
               <Link
                 href="/#home"
-                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+                className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#home')}
               >
                 Home
               </Link>
               <Link
                 href="#about"
-                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+                className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#about')}
               >
                 About
               </Link>
               <Link
                 href="#service"
-                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+                className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#service')}
               >
                 Our Services
               </Link>
               <Link
                 href="#reviews"
-                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+                className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#reviews')}
               >
                 Reviews
               </Link>
               <Link
                 href="#blogs"
-                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+                className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#blogs')}
               >
                 Blogs
               </Link>
               <Link
                 href="#contact"
-                className="text-black rounded-md text-sm font-thin hover:text-black/80"
+                className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#contact')}
               >
                 Contact Us

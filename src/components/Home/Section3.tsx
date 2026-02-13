@@ -20,35 +20,35 @@ export default function Section3() {
           <h2 className=" mb-3 " style={{ fontSize: 35 }}>
             Everything you need <br /> for a healthy Face
           </h2>
-          <p className="mb-2">We’re putting your comfort first</p> <br />
+          <p className="mb-2 font-light">We’re putting your comfort first</p> <br />
           <ul className="list-unstyled">
-            <li className="mb-3 d-flex align-items-center">
+            <li className="mb-3 d-flex align-items-center font-light">
               <i className="ri-check-double-line text-success me-2" /> Modern
               technology
             </li>
             <hr />
-            <li className="mb-3 d-flex align-items-center">
+            <li className="mb-3 d-flex align-items-center font-light">
               <i className="ri-check-double-line text-success me-2" /> Friendly
               team you can call friends
             </li>
             <hr />
-            <li className="mb-3 d-flex align-items-center">
+            <li className="mb-3 d-flex align-items-center font-light">
               <i className="ri-check-double-line text-success me-2" /> Sedation
               dentistry to help you relax
             </li>
             <hr />
-            <li className="mb-3 d-flex align-items-center">
+            <li className="mb-3 d-flex align-items-center font-light">
               <i className="ri-check-double-line text-success me-2" /> We accept
               many insurance plans and offer discounts
             </li>
             <hr />
-            <li className="mb-3 d-flex align-items-center">
+            <li className="mb-3 d-flex align-items-center font-light">
               <i className="ri-check-double-line text-success me-2" /> We use
               energy-saving and waste-reducing methods
             </li>
           </ul>
           <br />
-          <p className="mt-2 text-muted">...and much more!</p>
+          <p className="mt-2 text-muted font-light">...and much more!</p>
         </div>
       </div>
     </div>

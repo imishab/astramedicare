@@ -1,4 +1,4 @@
-﻿/*
+/*
 * ----------------------------------------------------------------------------------------
 Author       : Themesvila
 Template Name: Dorbesh - Personal Portfolio HTML Template
@@ -36,6 +36,8 @@ Version      : 1.0
     --main-color: #444;
     --heading-color: #000;
     --primary-color: #cd5f37;
+    --title-font: 'Montserrat', sans-serif;
+    --text-font: 'Montserrat', sans-serif;
     --lighter-color: #444;
     --subtitle-color: #444;
     --black-color: #000;
@@ -59,7 +61,7 @@ body {
     font-weight: 400;
     line-height: 30px;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
 
@@ -83,7 +85,7 @@ h6,
 .h6,
 .accordion-item .accordion-button {
     color: var(--heading-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1,
@@ -146,7 +148,7 @@ a {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a:hover,
@@ -1529,7 +1531,7 @@ html {
     display: block;
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--black-color);
 }
 
@@ -1937,12 +1939,12 @@ ul.extra-skills li i {
 .pd-info-item span {
     display: block;
     color: var(--lighter-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .pd-info-item h5 {
     color: var(--lighter-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     y: 'Syne', sans-serif;
 }
 
@@ -2077,7 +2079,7 @@ ul.extra-skills li i {
     font-size: 38px;
     font-weight: 500;
     color: var(--primary-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .pricing-item .pricing-header .price:before {

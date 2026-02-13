@@ -17,13 +17,13 @@ export default function Section1() {
           <div className="col-xl-6 col-md-12 d-flex">
             <div className="experience-list w-100 bg-[#F5F2ED] rounded-xl d-flex align-items-center" style={{ height: '100%', borderRadius: 30 }}>
               <div className="single-resume w-100">
-                <p style={{ textTransform: "uppercase", marginTop: 0 }}>
+                <p style={{ textTransform: "uppercase", marginTop: 0 }} className='font-light'>
                   Your dentist is here to help
                 </p>
                 <h2 style={{ fontSize: 35 }}>
                   A healthier smile without the hassle
                 </h2>
-                <p className="mt-3">
+                <p className="mt-3 font-light">
                   Our team treats you as a whole person, not just a set of teeth.
                   Your mouth is a window to overall health, and we look for and
                   teach you about signs indicating broader health issues.

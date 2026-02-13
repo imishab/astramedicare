@@ -14,7 +14,7 @@ export default function Banner() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-6 ">
                 Healthy teeth, happy life. Let us keep you smiling.
               </h2>
-              <p className="mb-3 md:mb-6 text-sm md:text-base text-gray-600 ">
+              <p className="mb-3 md:mb-6 text-sm md:text-base text-gray-600 font-thin">
                 We provide personalized dental care to ensure your smile stays
                 healthy and confident every day.
               </p>
@@ -29,7 +29,7 @@ export default function Banner() {
                 <div className="hidden md:block border-l border-gray-300 h-8" />
                 {/* Text - Emergency CTA */}
                 <div className="text-center sm:text-left md:ml-0">
-                  <p className="mb-1 text-xs md:text-sm text-gray-600">
+                  <p className="mb-1 text-xs md:text-sm text-gray-600 font-light">
                     Emergency? Need to come ASAP?
                   </p>
                   <a
