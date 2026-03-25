@@ -174,7 +174,7 @@ export default function AboutPage() {
                       >
                         Patient-centered care
                       </p>
-                      <h2 style={{ fontSize: 35 }}>
+                      <h2 className="about-page-resume-title">
                         Treatment that begins
                         <br />
                         with listening
@@ -237,10 +237,10 @@ export default function AboutPage() {
               {values.map((value) => (
                 <div className="col-lg-4 col-md-6" key={value.title}>
                   <div className="service-item wow fadeInUp delay-0-4s about-page-card">
-                    <div className="about-page-card-icon" style={{ color: "#652d02ff", fontSize: "3rem", padding: "20px 1px 20px 1px" }}>
+                    <div className="about-page-card-icon">
                       <i className={value.icon} />
                     </div>
-                    <h4>{value.title}</h4>
+                    <h4 className="about-page-card-title">{value.title}</h4>
                     <p className="font-light">{value.description}</p>
                   </div>
                 </div>
@@ -266,10 +266,10 @@ export default function AboutPage() {
               {specialties.map((item) => (
                 <div className="col-lg-4 col-sm-6 col-xs-12" key={item.title}>
                   <div className="skill-item wow fadeInUp delay-0-2s">
-                    <div className="about-page-skill-icon" style={{ color: "#652d02ff", fontSize: "3rem", padding: "20px 1px 20px 1px" }}>
+                    <div className="about-page-skill-icon">
                       <i className="ri-check-double-line" />
                     </div>
-                    <h5>{item.title}</h5>
+                    <h5 className="about-page-skill-title">{item.title}</h5>
                     <p className="font-light mt-3">{item.description}</p>
                   </div>
                 </div>
