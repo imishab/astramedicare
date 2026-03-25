@@ -2312,7 +2312,6 @@ ul.extra-skills li i {
 .contact-page-form {
     padding: 45px 50px 50px;
     border-radius: 14px;
-    background: var(--lighter-color);
     border: 1px solid var(--border-color);
 }
 

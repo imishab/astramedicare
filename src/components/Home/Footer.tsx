@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -22,29 +23,29 @@ export default function Footer() {
           <h6 className="text-uppercase font-weight-bold mb-4">Quick Links</h6>
           <ul className="list-unstyled mb-0">
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
+              <Link href="/" className="text-muted font-light">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
+              <Link href="/about" className="text-muted font-light">
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
+              <Link href="/#service" className="text-muted font-light">
                 Services
-              </a>
+              </Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
+              <Link href="/#reviews" className="text-muted font-light">
                 Patient Experiences
-              </a>
+              </Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
+              <Link href="/contact" className="text-muted font-light">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

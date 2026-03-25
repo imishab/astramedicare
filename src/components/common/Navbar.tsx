@@ -107,9 +107,8 @@ const Navbar = () => {
                 Reviews
               </Link>
               <Link
-                href={sectionHref('#contact')}
+                href="/contact"
                 className="text-black rounded-md text-sm font-light hover:text-black/80"
-                onClick={(e) => handleSmoothScroll(e, '#contact')}
               >
                 Contact Us
               </Link>
@@ -119,7 +118,7 @@ const Navbar = () => {
           {/* Right: Button */}
           <div className="w-1/3 flex justify-end" >
             {/* <a className="nav-link-click me-4" href="#works"><i className="ri-phone-line"></i> +91 999-999-999</a> */}
-            <Link href={sectionHref('#contact')} className="theme-btn">Book a Visit</Link>
+            <Link href="/contact" className="theme-btn">Book a Visit</Link>
           </div>
         </div>
       </div>
@@ -132,10 +131,10 @@ const Navbar = () => {
           <Link href={sectionHref('#service')} className="block text-black px-3 py-2 rounded-md">Our Services</Link>
           <Link href={sectionHref('#team')} className="block text-black px-3 py-2 rounded-md">Doctors</Link>
           <Link href={sectionHref('#reviews')} className="block text-black px-3 py-2 rounded-md">Reviews</Link>
-          <Link href={sectionHref('#contact')} className="block text-black px-3 py-2 rounded-md">Contact Us</Link>
+          <Link href="/contact" className="block text-black px-3 py-2 rounded-md">Contact Us</Link>
         </div>
         <div className="px-2 pt-2 pb-3">
-          <Link href={sectionHref('#contact')}>
+          <Link href="/contact">
             {/* <Button className="w-full">Lets Talk</Button> */}
           </Link>
         </div>
