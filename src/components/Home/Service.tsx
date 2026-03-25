@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef } from 'react';
+import type { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
@@ -10,42 +11,42 @@ import 'swiper/css/navigation';
 
 const services = [
   {
-    title: 'Teeth Whitening',
-    description: 'Brighten your smile with our professional teeth whitening services. Remove stains and discoloration to reveal a more radiant, confident you!',
+    title: 'Skin Rejuvenation',
+    description: 'Hydrafacial, Oxygeneo therapy, carbon laser facials, and chemical peels designed to refresh dull skin and restore a healthy glow.',
     image: '/img/services/service-1.png'
   },
   {
-    title: 'Teeth Whitening',
-    description: 'Brighten your smile with our professional teeth whitening services. Remove stains and discoloration to reveal a more radiant, confident you!',
+    title: 'Laser Skin Treatments',
+    description: 'Precision laser toning, acne scar reduction, and resurfacing treatments that improve texture, tone, and skin clarity with minimal downtime.',
     image: '/img/services/service-1.png'
   },
   {
-    title: 'Teeth Whitening',
-    description: 'Brighten your smile with our professional teeth whitening services. Remove stains and discoloration to reveal a more radiant, confident you!',
+    title: 'Anti-Aging Care',
+    description: 'Botox, dermal fillers, PRP therapy, and skin boosters planned carefully to support smoother, healthier, naturally balanced skin.',
     image: '/img/services/service-1.png'
   },
   {
-    title: 'Teeth Whitening',
-    description: 'Brighten your smile with our professional teeth whitening services. Remove stains and discoloration to reveal a more radiant, confident you!',
+    title: 'Acne and Pigmentation',
+    description: 'Personalized treatment plans for acne, melasma, and post-acne scars that focus on the underlying concern, not just temporary relief.',
     image: '/img/services/service-1.png'
   },
   {
-    title: 'Teeth Whitening',
-    description: 'Brighten your smile with our professional teeth whitening services. Remove stains and discoloration to reveal a more radiant, confident you!',
+    title: 'Smile Enhancement',
+    description: 'Teeth whitening, smile designing, and dental veneers to improve shape, color, and overall smile aesthetics with a natural finish.',
     image: '/img/services/service-1.png'
   },
   {
-    title: 'Teeth Whitening',
-    description: 'Brighten your smile with our professional teeth whitening services. Remove stains and discoloration to reveal a more radiant, confident you!',
+    title: 'Restorative Dentistry',
+    description: 'Check-ups, cleanings, composite restorations, zirconia crowns, root canal care, and full mouth rehabilitation for lasting oral health.',
     image: '/img/services/service-1.png'
   },
 ];
 
 export default function Service() {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="testimonials-area">
+    <section className="testimonials-area" id="service">
       <div className="">
         <div className="container-inner-service ">
           <div className="row">
@@ -54,8 +55,8 @@ export default function Service() {
               <div className="section-title section-title-2  wow fadeInUp delay-0-2s">
                 <h2 className="text-white">Our Services</h2>
                 <p className="font-light">
-                  We provide personalized dental care to ensure your <br />
-                  smile stays healthy and confident every day.
+                  Thoughtful treatments across dermatology, aesthetics, and dentistry,
+                  planned for comfort, clarity, and long-term results.
                 </p>
               </div>
             </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
@@ -13,37 +14,38 @@ export default function Footer() {
         <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
           <img src="/img/logo2.png" width="50%" alt="" /> <br /> <br />
           <p className="font-light">
-            We provide personalized dental care to ensure your smile stays healthy
-            and confident every day.
+            Astra Medicare brings together advanced skin, aesthetic, and dental
+            care in one clinic with a strong focus on comfort, clarity, and
+            long-term results.
           </p>
         </div>
         <div className="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 className="text-uppercase font-weight-bold mb-4">Quick Links</h6>
           <ul className="list-unstyled mb-0">
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
+              <Link href="/" className="text-muted font-light">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
+              <Link href="/about" className="text-muted font-light">
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
+              <Link href="/#service" className="text-muted font-light">
                 Services
-              </a>
+              </Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
-                Testimonials
-              </a>
+              <Link href="/#reviews" className="text-muted font-light">
+                Patient Experiences
+              </Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="text-muted font-light">
+              <Link href="/contact" className="text-muted font-light">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -52,17 +54,17 @@ export default function Footer() {
           <ul className="list-unstyled mb-0">
             <li className="mb-2">
               <a href="#" className="text-muted font-light">
-                Facial
+                Skin Rejuvenation
               </a>
             </li>
             <li className="mb-2">
               <a href="#" className="text-muted font-light">
-                Cosmatology
+                Aesthetic Treatments
               </a>
             </li>
             <li className="mb-2">
               <a href="#" className="text-muted font-light">
-                Hair Treatment
+                Laser Procedures
               </a>
             </li>
             <li className="mb-2">
@@ -72,7 +74,7 @@ export default function Footer() {
             </li>
             <li className="mb-2">
               <a href="#" className="text-muted font-light">
-                PRP
+                PRP Therapy
               </a>
             </li>
           </ul>

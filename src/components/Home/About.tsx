@@ -12,18 +12,19 @@ export default function About() {
             <div className="about-line" />
           </div>
           <h1 className="main-heading">
-            A healthier smile
+            A different approach
             <br />
-            without the hassle
+            to modern care
           </h1>
           <p className="description font-light">
-            Our clinic provides the best level of care — from checkups and
-            cleanings to fillings, teeth-whitening procedures, porcelain veneers,
-            crowns, bridges, dentures, dental implants, emergency care, and more;
-            we're well-equipped to help.
+            Astra Medicare is built around a simple belief: when people feel
+            good about their skin and their smile, their confidence changes.
+            Every consultation begins with a conversation, so you can
+            understand your options clearly and move forward without pressure or
+            rush.
           </p>{" "}
           <br />
-          <a href="contact.html" className="theme-btn mt-4">
+          <a href="#contact" className="theme-btn mt-4">
             Learn More <i className="ri-arrow-right-up-line" />
           </a>
         </div>

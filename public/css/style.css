@@ -1241,6 +1241,7 @@ html {
 }
 
 @media (max-width: 767px) {
+
     .about-content-part,
     .about-content-part-bottom {
         padding: 30px !important;
@@ -2320,14 +2321,14 @@ ul.extra-skills li i {
 
 .contact-page-form {
     padding: 45px 50px 50px;
-    border-radius: 14px;
-    background: var(--lighter-color);
+    border-radius: 30px;
+    background: #F5F2ED;
     border: 1px solid var(--border-color);
 }
 
 .contact-page-form .form-group .nice-select,
 .contact-page-form .form-group .form-control {
-    background: rgba(255, 255, 255, 0.07);
+    background: rgb(255, 255, 255);
 }
 
 .our-location iframe {
@@ -3127,14 +3128,15 @@ ul.blog_pagination li a:hover {
     overflow: hidden;
     margin-top: 100px;
 }
+
 @media (max-width: 768px) {
     .about-section {
         padding: 100px 0;
         position: relative;
         overflow: hidden;
-        margin-top: 10px;
+        margin-top: -100px;
     }
-  
+
 }
 
 
