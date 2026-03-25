@@ -74,8 +74,8 @@ export default function AboutPage() {
                     and a genuine understanding of what each patient needs.
                   </p>
                   <br />
-                  <div className="about-page-actions">
-                    <Link href="/#contact" className="theme-btn" style={{ marginRight: "10px" }}>
+                  <div className="about-page-actions d-flex justify-content-center align-items-center flex-wrap gap-3 mt-50 md:mt-0">
+                    <Link href="/#contact" className="theme-btn">
                       Schedule a Consultation{" "}
                       <i className="ri-arrow-right-up-line" />
                     </Link>
@@ -146,7 +146,7 @@ export default function AboutPage() {
         </section>
 
         <section className="resume-area" style={{ backgroundColor: "white" }}>
-          <div className="container py-100">
+          <div className="container ">
             <div className="resume-items">
               <div className="row g-0 d-flex align-items-stretch">
                 <div className="col-xl-6 col-md-12 d-flex">
