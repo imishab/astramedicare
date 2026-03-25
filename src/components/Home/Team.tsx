@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function Team() {
   return (
-    <section id="service" className="services-area innerpage-single-area">
+    <section id="team" className="services-area innerpage-single-area">
     <div className="container">
       <div className="">
         <div className="row mb-4">
           <div className="col-xl-12 col-lg-12">
             <div className="section-title text-center wow fadeInUp delay-0-2s ">
-              <p>Meet our team</p>
-              <h2>Friendly faces, personalized care</h2>
+              <p>Meet the doctors</p>
+              <h2>Clinical expertise with a patient-first approach</h2>
             </div>
           </div>
         </div>
@@ -18,9 +18,9 @@ export default function Team() {
           <div className="col-lg-4 col-md-6">
             <div className="service-item wow fadeInUp delay-0-4s">
               <div className="p-2 mb-3">
-                <h4 className="mb-1">Mark Hoffman</h4>
+                <h4 className="mb-1">Dermatology Care</h4>
                 <p className="mt-0" style={{ color: "#a8a8a8", fontSize: 13 }}>
-                  Cosmetic Dentistry
+                  Diagnosis and treatment for skin health, acne, pigmentation, and rejuvenation
                 </p>
               </div>
               <center>
@@ -29,9 +29,7 @@ export default function Team() {
               <br />
               <hr />
               <div className="d-flex justify-content-between align-items-center p-2">
-                <a href="#!">
-                  Learn More <i className="ri-arrow-right-up-line" />
-                </a>
+                <span>Doctor profile coming soon</span>
                 <div>
                   <i className="ri-facebook-circle-fill" />
                   <i className="ri-instagram-line" />
@@ -42,9 +40,9 @@ export default function Team() {
           <div className="col-lg-4 col-md-6">
             <div className="service-item wow fadeInUp delay-0-4s">
               <div className="p-2 mb-3">
-                <h4 className="mb-1">Mark Hoffman</h4>
+                <h4 className="mb-1">Aesthetic Treatments</h4>
                 <p className="mt-0" style={{ color: "#a8a8a8", fontSize: 13 }}>
-                  Cosmetic Dentistry
+                  Botox, fillers, PRP, skin boosters, and non-surgical cosmetic care
                 </p>
               </div>
               <center>
@@ -53,9 +51,7 @@ export default function Team() {
               <br />
               <hr />
               <div className="d-flex justify-content-between align-items-center p-2">
-                <a href="#!">
-                  Learn More <i className="ri-arrow-right-up-line" />
-                </a>
+                <span>Doctor profile coming soon</span>
                 <div>
                   <i className="ri-facebook-circle-fill" />
                   <i className="ri-instagram-line" />
@@ -66,9 +62,9 @@ export default function Team() {
           <div className="col-lg-4 col-md-6">
             <div className="service-item wow fadeInUp delay-0-4s">
               <div className="p-2 mb-3">
-                <h4 className="mb-1">Mark Hoffman</h4>
+                <h4 className="mb-1">Modern Dentistry</h4>
                 <p className="mt-0" style={{ color: "#a8a8a8", fontSize: 13 }}>
-                  Cosmetic Dentistry
+                  Preventive, cosmetic, and restorative dental treatments for lasting smile health
                 </p>
               </div>
               <center>
@@ -77,9 +73,7 @@ export default function Team() {
               <br />
               <hr />
               <div className="d-flex justify-content-between align-items-center p-2">
-                <a href="#!">
-                  Learn More <i className="ri-arrow-right-up-line" />
-                </a>
+                <span>Doctor profile coming soon</span>
                 <div>
                   <i className="ri-facebook-circle-fill" />
                   <i className="ri-instagram-line" />
@@ -90,8 +84,8 @@ export default function Team() {
         </div>{" "}
         <br />
         <center>
-          <a href="contact.html" className="theme-btn mt-4">
-            View All Doctors <i className="ri-arrow-right-up-line" />
+          <a href="#contact" className="theme-btn mt-4">
+            Book a Consultation <i className="ri-arrow-right-up-line" />
           </a>
         </center>{" "}
         <br />

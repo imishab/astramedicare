@@ -18,21 +18,22 @@ export default function Section1() {
             <div className="experience-list w-100 bg-[#F5F2ED] rounded-xl d-flex align-items-center" style={{ height: '100%', borderRadius: 30 }}>
               <div className="single-resume w-100">
                 <p style={{ textTransform: "uppercase", marginTop: 0 }} className='font-light'>
-                  Your dentist is here to help
+                  Patient-centered care
                 </p>
                 <h2 style={{ fontSize: 35 }}>
-                  A healthier smile without the hassle
+                  Treatment that begins with listening
                 </h2>
                 <p className="mt-3 font-light">
-                  Our team treats you as a whole person, not just a set of teeth.
-                  Your mouth is a window to overall health, and we look for and
-                  teach you about signs indicating broader health issues.
+                  Many people delay treatment because they feel unsure or
+                  anxious. At Astra Medicare, we change that experience through
+                  clear consultations, careful explanations, and treatment plans
+                  shaped around what is best for each patient.
                 </p>
                 <div className="mt-3 d-flex gap-2">
-                  <a href="contact.html" className="theme-btn">
+                  <a href="#team" className="theme-btn">
                     Our Doctors <i className="ri-arrow-right-up-line" />
                   </a>
-                  <a href="contact.html" className="theme-btn-outline">
+                  <a href="#about" className="theme-btn-outline">
                     About the Clinic <i className="ri-arrow-right-up-line" />
                   </a>
                 </div>

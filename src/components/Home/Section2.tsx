@@ -8,10 +8,10 @@ export default function Section2() {
       <img src="/img/element-1.png" width="20px" alt="" />
     </div>
     <p className="quote-text">
-      "I enjoy being involved with my community. As a dentist, you get to meet a
-      lot of people, and potentially help a lot of people, too."
+      &ldquo;The best outcomes happen when patients feel informed, relaxed, and
+      confident throughout their care.&rdquo;
     </p>
-    <p className="quote-author">Dr. Maynard</p>
+    <p className="quote-author">Astra Medicare</p>
   </div>
 </div>
 <style jsx>{`

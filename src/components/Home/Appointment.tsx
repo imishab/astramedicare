@@ -15,15 +15,16 @@ export default function Appointment() {
           <div className="col-lg-6">
             <div className="contact-form contact-form-area wow fadeInUp delay-0-4s">
               <h3 className="mb-4 md:hidden">
-                {" "}
-                Get Appointment <br />
-                From Our Experts
+                When You Feel Ready
               </h3>
               <h1 className="mb-4 hidden md:block">
-                {" "}
-                Get Appointment <br />
-                From Our Experts
+                When You Feel Ready
               </h1>{" "}
+              <p className="font-light mb-4">
+                If you are considering skin treatment, dental care, or a smile
+                transformation, our team is here to guide you through the
+                process with clarity and care.
+              </p>
               <br />
               <form
                 id="contactForm"
@@ -76,7 +77,7 @@ export default function Appointment() {
                       name="subject"
                       className="form-control"
                       defaultValue=""
-                      placeholder="Your Subject"
+                      placeholder="Treatment Interest"
                       required
                       data-error="Please enter your Subject"
                     />
@@ -92,7 +93,7 @@ export default function Appointment() {
                         id="message"
                         className="form-control"
                         rows={4}
-                        placeholder="Write Your message"
+                        placeholder="Tell us about your concern or the treatment you are considering"
                         required
                         data-error="Please Write your Message"
                         defaultValue={""}
@@ -107,7 +108,7 @@ export default function Appointment() {
                         className="theme-btn w-100 btn-lg"
                         style={{ padding: 20, borderRadius: 50 }}
                       >
-                        Send Me Message <i className="ri-mail-line" />
+                        Request Consultation <i className="ri-mail-line" />
                       </button>
                       <div id="msgSubmit" className="hidden" />
                     </div>

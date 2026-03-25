@@ -13,8 +13,9 @@ export default function Footer() {
         <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
           <img src="/img/logo2.png" width="50%" alt="" /> <br /> <br />
           <p className="font-light">
-            We provide personalized dental care to ensure your smile stays healthy
-            and confident every day.
+            Astra Medicare brings together advanced skin, aesthetic, and dental
+            care in one clinic with a strong focus on comfort, clarity, and
+            long-term results.
           </p>
         </div>
         <div className="col-lg-2 col-md-6 mb-4 mb-lg-0">
@@ -37,7 +38,7 @@ export default function Footer() {
             </li>
             <li className="mb-2">
               <a href="#" className="text-muted font-light">
-                Testimonials
+                Patient Experiences
               </a>
             </li>
             <li className="mb-2">
@@ -52,17 +53,17 @@ export default function Footer() {
           <ul className="list-unstyled mb-0">
             <li className="mb-2">
               <a href="#" className="text-muted font-light">
-                Facial
+                Skin Rejuvenation
               </a>
             </li>
             <li className="mb-2">
               <a href="#" className="text-muted font-light">
-                Cosmatology
+                Aesthetic Treatments
               </a>
             </li>
             <li className="mb-2">
               <a href="#" className="text-muted font-light">
-                Hair Treatment
+                Laser Procedures
               </a>
             </li>
             <li className="mb-2">
@@ -72,7 +73,7 @@ export default function Footer() {
             </li>
             <li className="mb-2">
               <a href="#" className="text-muted font-light">
-                PRP
+                PRP Therapy
               </a>
             </li>
           </ul>

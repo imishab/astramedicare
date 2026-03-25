@@ -96,18 +96,18 @@ const Navbar = () => {
                 Our Services
               </Link>
               <Link
+                href="#team"
+                className="text-black rounded-md text-sm font-light hover:text-black/80"
+                onClick={(e) => handleSmoothScroll(e, '#team')}
+              >
+                Doctors
+              </Link>
+              <Link
                 href="#reviews"
                 className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#reviews')}
               >
                 Reviews
-              </Link>
-              <Link
-                href="#blogs"
-                className="text-black rounded-md text-sm font-light hover:text-black/80"
-                onClick={(e) => handleSmoothScroll(e, '#blogs')}
-              >
-                Blogs
               </Link>
               <Link
                 href="#contact"
@@ -131,11 +131,11 @@ const Navbar = () => {
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-transparent`}>
         <div className="px-4 pt-20 pb-3 space-y-1 sm:px-3">
           <Link href="/#home" className={`block text-black px-3 py-2 rounded-md ${pathname === '/' ? 'border border-white/20' : ''}`}>Home</Link>
-          <Link href="/About" className={`block text-black px-3 py-2 rounded-md ${pathname === '/About' ? 'border border-white/20' : ''}`}>About</Link>
-          <Link href="/Service" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Service' ? 'border border-white/20' : ''}`}>Our Services</Link>
-          <Link href="/Reviews" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Reviews' ? 'border border-white/20' : ''}`}>Reviews</Link>
-          <Link href="/Blogs" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Blogs' ? 'border border-white/20' : ''}`}>Blogs</Link>
-          <Link href="/Contact" className={`block text-black px-3 py-2 rounded-md ${pathname === '/Contact' ? 'border border-white/20' : ''}`}>Contact Us</Link>
+          <Link href="/#about" className="block text-black px-3 py-2 rounded-md">About</Link>
+          <Link href="/#service" className="block text-black px-3 py-2 rounded-md">Our Services</Link>
+          <Link href="/#team" className="block text-black px-3 py-2 rounded-md">Doctors</Link>
+          <Link href="/#reviews" className="block text-black px-3 py-2 rounded-md">Reviews</Link>
+          <Link href="/#contact" className="block text-black px-3 py-2 rounded-md">Contact Us</Link>
         </div>
         <div className="px-2 pt-2 pb-3">
           <Link href="/#contact">
