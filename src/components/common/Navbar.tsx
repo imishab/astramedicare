@@ -1,22 +1,17 @@
 "use client";
 import { useState, useEffect, MouseEvent } from 'react';
 // import Button from './Button';
-import { AudioLines, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      return window.scrollY > 0;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -26,9 +21,12 @@ const Navbar = () => {
     };
   }, []);
 
+  const isHomePage = pathname === '/';
+  const sectionHref = (target: string) => (isHomePage ? target : `/${target}`);
+
   const handleSmoothScroll = (event: MouseEvent<HTMLAnchorElement>, target: string) => {
     // Only intercept hash links that exist on the current page
-    if (!target.startsWith('#')) return;
+    if (!isHomePage || !target.startsWith('#')) return;
     event.preventDefault();
     const element = document.querySelector(target);
     if (element) {
@@ -75,42 +73,41 @@ const Navbar = () => {
               className="flex items-center justify-center gap-8 px-4 py-2"
             >
               <Link
-                href="/#home"
+                href={sectionHref('#home')}
                 className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#home')}
               >
                 Home
               </Link>
               <Link
-                href="#about"
+                href="/about"
                 className="text-black rounded-md text-sm font-light hover:text-black/80"
-                onClick={(e) => handleSmoothScroll(e, '#about')}
               >
                 About
               </Link>
               <Link
-                href="#service"
+                href={sectionHref('#service')}
                 className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#service')}
               >
                 Our Services
               </Link>
               <Link
-                href="#team"
+                href={sectionHref('#team')}
                 className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#team')}
               >
                 Doctors
               </Link>
               <Link
-                href="#reviews"
+                href={sectionHref('#reviews')}
                 className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#reviews')}
               >
                 Reviews
               </Link>
               <Link
-                href="#contact"
+                href={sectionHref('#contact')}
                 className="text-black rounded-md text-sm font-light hover:text-black/80"
                 onClick={(e) => handleSmoothScroll(e, '#contact')}
               >
@@ -122,7 +119,7 @@ const Navbar = () => {
           {/* Right: Button */}
           <div className="w-1/3 flex justify-end" >
             {/* <a className="nav-link-click me-4" href="#works"><i className="ri-phone-line"></i> +91 999-999-999</a> */}
-            <a href="#contact" className="theme-btn">Book a Visit</a>
+            <Link href={sectionHref('#contact')} className="theme-btn">Book a Visit</Link>
           </div>
         </div>
       </div>
@@ -130,15 +127,15 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-transparent`}>
         <div className="px-4 pt-20 pb-3 space-y-1 sm:px-3">
-          <Link href="/#home" className={`block text-black px-3 py-2 rounded-md ${pathname === '/' ? 'border border-white/20' : ''}`}>Home</Link>
-          <Link href="/#about" className="block text-black px-3 py-2 rounded-md">About</Link>
-          <Link href="/#service" className="block text-black px-3 py-2 rounded-md">Our Services</Link>
-          <Link href="/#team" className="block text-black px-3 py-2 rounded-md">Doctors</Link>
-          <Link href="/#reviews" className="block text-black px-3 py-2 rounded-md">Reviews</Link>
-          <Link href="/#contact" className="block text-black px-3 py-2 rounded-md">Contact Us</Link>
+          <Link href={sectionHref('#home')} className={`block text-black px-3 py-2 rounded-md ${pathname === '/' ? 'border border-white/20' : ''}`}>Home</Link>
+          <Link href="/about" className="block text-black px-3 py-2 rounded-md">About</Link>
+          <Link href={sectionHref('#service')} className="block text-black px-3 py-2 rounded-md">Our Services</Link>
+          <Link href={sectionHref('#team')} className="block text-black px-3 py-2 rounded-md">Doctors</Link>
+          <Link href={sectionHref('#reviews')} className="block text-black px-3 py-2 rounded-md">Reviews</Link>
+          <Link href={sectionHref('#contact')} className="block text-black px-3 py-2 rounded-md">Contact Us</Link>
         </div>
         <div className="px-2 pt-2 pb-3">
-          <Link href="/#contact">
+          <Link href={sectionHref('#contact')}>
             {/* <Button className="w-full">Lets Talk</Button> */}
           </Link>
         </div>

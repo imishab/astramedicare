@@ -342,3 +342,198 @@ html.lenis {
     padding: 50px 20px !important;
   }
 }
+
+.about-page-hero {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: linear-gradient(180deg, #f7f2ea 0%, #ffffff 100%);
+}
+
+.about-page-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #cd5f37;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.about-page-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.about-page-hero-visual {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-page-main-image {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 30px;
+  background: #f4eee6;
+}
+
+.about-page-badge {
+  max-width: 300px;
+  margin: -40px auto 0;
+  background: #1f1a17;
+  color: #fff;
+  padding: 24px;
+  border-radius: 24px;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.about-page-badge h5 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.about-page-badge p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+.about-page-intro {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.about-page-quote-section {
+  position: relative;
+  background: url("/img/image-2.png") no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 120px 0;
+  color: #fff;
+}
+
+.about-page-quote-card {
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.about-page-quote-card .icon {
+  margin-bottom: 1rem;
+}
+
+.quote-text {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.quote-author {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.about-page-card {
+  min-height: 260px;
+}
+
+.about-page-card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: #f5f2ed;
+  color: #cd5f37;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-page-skill-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background: #f5f2ed;
+  color: #cd5f37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.about-page-cta {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.about-page-cta-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+@media (max-width: 991px) {
+  .about-page-hero {
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
+
+  .about-page-quote-section {
+    background-attachment: scroll;
+    padding: 80px 0;
+  }
+
+  .about-page-cta-content h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-page-hero {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  .about-page-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-page-actions a {
+    width: 100%;
+  }
+
+  .about-page-badge {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .about-page-quote-card {
+    padding: 25px;
+  }
+
+  .quote-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .about-page-cta-content h1 {
+    font-size: 32px;
+  }
+}
